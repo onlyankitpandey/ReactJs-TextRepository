@@ -1,0 +1,135 @@
+@media (max-width: 1440px) {
+}
+@media (max-width: 1280px) {
+  .slick-prev {
+    left: 0px;
+    z-index: 999;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  // .logoImg {
+  //   width: 55px;
+  // }
+}
+@media (max-width: 1024px) {
+  .slick-prev {
+    left: 0px;
+    z-index: 999;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  // .logoImg {
+  //   width: 55px;
+  // }
+}
+@media (max-width: 991px) {
+  .padd {
+    height: 289px;
+    overflow-y: scroll; /* Add the ability to scroll */
+  }
+  .padd::-webkit-scrollbar {
+    display: none;
+  }
+  // .logoImg {
+  //   width: 65px;
+  // }
+  .slickbottomslider .slick-next {
+    right: 39px;
+  }
+  .slickbottomslider .slick-prev {
+    right: 92px;
+  }
+
+  .slick-prev {
+    left: 0px;
+    z-index: 999;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  .mainboxEarn {
+    & .shape1 {
+      top: -17px;
+      width: 80px;
+    }
+    & .shape3 {
+      top: -17px;
+      width: 80px;
+    }
+    & h1 {
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .padd {
+    height: 289px;
+    overflow-y: scroll; /* Add the ability to scroll */
+  }
+  .padd::-webkit-scrollbar {
+    display: none;
+  }
+  .txt3 {
+    h1 {
+      font-size: 24px !important;
+    }
+  }
+  .txt1 {
+    h2 {
+      font-size: 12px !important;
+    }
+  }
+  .mintDialog {
+    background: #000;
+  }
+  .remaining {
+    h4: {
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+
+  .subs {
+    border-right: none !important;
+    font-size: 12px !important;
+  }
+  .addition {
+    font-size: 12px !important;
+    border-left: none !important;
+  }
+  .logoImg {
+    width: 100px;
+  }
+  .slickbottomslider .slick-prev {
+    right: 92px;
+  }
+
+  .slickbottomslider .slick-next {
+    right: 39px;
+  }
+  .slick-prev {
+    left: 0px;
+    z-index: 999;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  .stillQues {
+    & h2 {
+      font-size: 25px;
+    }
+  }
+  .mainboxEarn {
+    & .shape1 {
+      display: none;
+    }
+    & .shape3 {
+      display: none;
+    }
+    & h1 {
+      font-size: 17px;
+    }
+  }
+}
