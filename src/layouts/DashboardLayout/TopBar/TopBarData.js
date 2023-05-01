@@ -1,11 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import clsx from "clsx";
-import Modal from "@material-ui/core/Modal";
-import { AuthContext } from "src/context/Auth";
-
-import SearchField from "src/component/SearchField";
-import { FiSun } from "react-icons/fi";
-import { FaRegMoon } from "react-icons/fa";
 import PropTypes from "prop-types";
 import {
   AppBar,
@@ -15,33 +9,10 @@ import {
   IconButton,
   Badge,
   Typography,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Button,
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  DialogActions,
-  Grid,
   Avatar,
   Divider,
-  Popper,
 } from "@material-ui/core";
-import NotificationsIcon from "@material-ui/icons/Notifications";
-import { FaSignOutAlt } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
-import Logo from "src/component/Logo";
-import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
-import SyncIcon from "@material-ui/icons/Sync";
-import Axios from "axios";
-import ExpandMore from "@material-ui/icons/ExpandMore";
-import ButtonCircularProgress from "src/component/ButtonCircularProgress";
-import SearchIcon from "@material-ui/icons/Search";
-import { BiMoon, BiRupee, BiSearchAlt2, BiSun } from "react-icons/bi";
-import moment from "moment";
-// import SettingsContext from "src/context/SettingsContext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,25 +32,6 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     height: "30px",
     paddingLeft: "16px",
-    // "@media (max-width: 400px)": {
-    //   width: "100px",
-    //   height: "20px",
-    //   padding: "0",
-    // },
-    // "@media (max-width: 500px, min-width: 400px)": {
-    //   width: "140px",
-    //   height: "30px",
-    //   padding: "0",
-    // },"@media (max-width: 400px)": {
-    //   width: "100px",
-    //   height: "20px",
-    //   padding: "0",
-    // },
-    // "@media (max-width: 500px, min-width: 400px)": {
-    //   width: "140px",
-    //   height: "30px",
-    //   padding: "0",
-    // },
     "@media (max-width: 1279px)": {
       display: "none",
     },

@@ -14,6 +14,7 @@ import {
   TableContainer,
 } from "@material-ui/core";
 import Page from "src/component/Page";
+import SearchInput from 'src/component/SearchInput';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DashboardCard from "src/component/DashboardCard";
 import axios from "axios";
@@ -107,6 +108,7 @@ function Features() {
   const location = useLocation();
   const [adminData, setAdminData] = useState([]);
   const [IsLoading, setIsLoading] = useState(false);
+  const [query, setQuery] = React.useState('');
 
   const dashboardHandler = async () => {
     try {
@@ -214,6 +216,12 @@ function Features() {
               <Box align="left" mt={3} mb={2} className="headingBox">
                 <Typography variant="h2">Table Data History for {location.pathname.replace("/", "")}</Typography>
               </Box>
+              <SearchInput
+                value={query}
+                onChangeText={e => {
+                  setQuery(e.target.value);
+                }}
+              />
               <TableContainer>
                 <Table>
                   <TableHead>
